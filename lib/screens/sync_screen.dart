@@ -70,7 +70,7 @@ class _SyncScreenState extends State<SyncScreen> {
         };
 
         final response = await http.post(
-          Uri.parse('http://10.120.44.130:8080/api/daily-sticking/'),
+          Uri.parse('http://<ip address or dns>/api/daily-sticking/'),
           headers: {'Content-Type': 'application/json'},
           body: jsonEncode(payload),
         );
@@ -172,3 +172,4 @@ class _SyncScreenState extends State<SyncScreen> {
     );
   }
 }
+
