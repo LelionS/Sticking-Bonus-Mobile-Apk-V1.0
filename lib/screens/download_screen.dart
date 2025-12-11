@@ -26,8 +26,8 @@ class _DownloadScreenState extends State<DownloadScreen> {
   List<String> employeeFilterOptions = [];
 
   final Map<String, String> apiUrls = {
-    "employees": "http://10.120.44.130:8080/api/employees/",
-    "varieties": "http://10.120.44.130:8080/api/varieties/",
+    "employees": "http://<ip address or dns>/api/employees/",
+    "varieties": "http://<ip address or dns>/api/varieties/",
   };
 
   @override
@@ -230,3 +230,4 @@ class _DownloadScreenState extends State<DownloadScreen> {
     );
   }
 }
+
